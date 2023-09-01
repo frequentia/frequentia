@@ -8,8 +8,12 @@
 	<head>
 		<title>Frequentia</title>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/sass/team.scss" />
+		
 		<style>
 			.container-about{
 				display: flex;
@@ -29,6 +33,505 @@
 			.container {
 			padding: 2px 16px;
 			}
+			* {
+  font-family: Nunito, sans-serif;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.outer-container {
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  background-color: rgb(244, 252, 255);
+}
+
+.inner-container {
+  max-width: 1320px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.section-head-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  color: rgb(0, 135, 177);
+  margin: 0 0 10px 0;
+}
+
+.section-subhead-text {
+  font-size: 25px;
+  color: rgb(153, 153, 153);
+  line-height: 35px;
+  max-width: 470px;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-links {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(102, 102, 102);
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.position {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(0, 135, 177);
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-card-container {
+  width: 280px;
+  margin: 0 0 40px 0;
+}
+
+@media (max-width: 500px) {
+  .outer-container {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .section-head-text {
+    text-align: center;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
+  }
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
+    width: 50%;
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
+
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
+
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
+
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
+
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -41,6 +544,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="#about">About</a></li>
+							<li><a href="#teachers">Faculties</a></li>
 							<li><a href="#team">Team</a></li>
 							<li><a href="#events">Events</a></li>
 							<li><a href="#contact">Contact</a></li>
@@ -73,8 +577,8 @@
 						<p style="margin-top: -10px;">In Association With The Statistics Department</p>
 						<p style="margin-top: -38px;">St. Joseph's University</p>
 						<ul class="actions special">
-							<li><a href="#" class="button primary">About Us</a></li>
-							<li><a href="#" class="button">Events</a></li>
+							<li><a href="#about" class="button primary">About Us</a></li>
+							<li><a href="#events" class="button">Events</a></li>
 						</ul>
 					</div>
 					
@@ -94,65 +598,138 @@
 						</header>
 						<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
 					</section>
-					<section id="team">
+				<section id="teachers">
+					<h2>Teacher Administrators</h2>
+						  <div class="responsive-container-block">
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Dilip.jpg" style="border-radius: 50%;">
+								</div>
+								<p class="text-blk name">
+									Dr. Dileep Shetty
+								</p>
+								<p class="text-blk position">
+								  Teacher Coordinator
+								</p>
+							  </div>
+							</div>
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Architha.jpg" style="border-radius: 50%;">
+								</div>
+								<p class="text-blk name">
+									Ms. Architha M
+								</p>
+								<p class="text-blk position">
+								  Head Of Department
+								</p>
+							  </div>
+							</div>
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Suresh.jpg" style="border-radius: 50%;">
+								</div>
+								<p class="text-blk name">
+									Dr. Suresha Kharvi
+								</p>
+								<p class="text-blk position">
+								  PG Coordinator
+								</p>
+								
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+					  </div>
+					</section>
+					<section id="team" class="container">
 						<h2>Core Committee Members</h2>
-						<div style="text-align: right;margin-top: -90px;margin-bottom: 60px;">
+						<div style="text-align: right;margin-top: -4em;margin-bottom: 60px;">
 							<a href="team.html" class="button">View All</a>
 						</div>
-						
-						<!-- <div class="row"> -->
-							<!-- <div class="col-10">
-								<div class="card">
-									<img src="images/pranav.jpeg" alt="Avatar" style="width: 100%;">
-									<div class="" style="text-align: center;padding-bottom: 2px;">
-									  <h4><b>Pranav</b></h4> 
-									  <p>Head Of IT</p> 
-									</div>
-								  </div>
-							</div> -->
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-		
-									<section class="box special">
-										<span class="image featured"><img src="images/pranav.jpeg" alt="President" /></span>
-										<h2 style="margin-top: -30px;margin-bottom: -5px;"><b>Varun</b></h2>
-										<h4>President</h4>
-										<p style="text-align: justify;">The President, the cornerstone of our association, leads with passion and purpose. Through his guidance, we thrive as a united force, advancing our goals and embracing collective success.</p>
-										<!-- <ul class="actions special">
-											<li><a href="#" class="button alt">Learn More</a></li>
-										</ul> -->
-									</section>
-		
+						<div class="responsive-container-block">
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Varun.jpeg" style="border-radius: 50%;">
 								</div>
-								<div class="col-4 col-12-narrower">
-		
-									<section class="box special">
-										<span class="image featured"><img src="images/pranav.jpeg" alt="Vice President 1" /></span>
-										<h2 style="margin-top: -30px;margin-bottom: -5px;"><b>Aryan Leon</b></h2>
-										<h4>Vice President</h4>
-										<p style="text-align: justify;">Serving as a crucial pillar, the Vice President supports the association's goals with dedication. Their role amplifies teamwork, enriching our pursuits and driving us towards achievements that matter.</p>
-										<!-- <ul class="actions special">
-											<li><a href="#" class="button alt">Learn More</a></li>
-										</ul> -->
-									</section>
-		
-								</div>
-								<div class="col-4 col-12-narrower">
-		
-									<section class="box special">
-										<span class="image featured"><img src="images/pranav.jpeg" alt="Vice President 2" /></span>
-										<h2 style="margin-top: -30px;margin-bottom: -5px;"><b>Anushka</b></h2>
-										<h4>Vice President</h4>
-										<p style="text-align: justify;">The Vice President plays a pivotal role, complementing the President's leadership. Their dedication fosters cohesion, propelling the association towards its mission with collective determination and enthusiasm.</p>
-										<!-- <ul class="actions special">
-											<li><a href="#" class="button alt">Learn More</a></li>
-										</ul> -->
-									</section>
-		
-								</div>
+								<p class="text-blk name">
+									V.S. Varun
+								</p>
+								<p class="text-blk position">
+								  President
+								</p>
+							  </div>
 							</div>
-						<!-- </div> -->
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Aryan.jpeg" style="border-radius: 50%;">
+								</div>
+								<p class="text-blk name">
+									Aryan Leon Jude Mechery
+								</p>
+								<p class="text-blk position">
+								  Vice President
+								</p>
+							  </div>
+							</div>
+							<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+							  <div class="team-card">
+								<div class="img-wrapper" style="margin-bottom: 30px;">
+								  <img class="team-img" src="images/Anushka.jpeg" style="border-radius: 50%;">
+								</div>
+								<p class="text-blk name">
+									Anushka Singh
+								</p>
+								<p class="text-blk position">
+								  Vice President
+								</p>
+								
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+					  </div>
+					  <section id="events" class="">
+						<h2>Events Conducted</h2>
+						<div class="row">
+							<div class="col-6 col-12-narrower">
+	
+								<section class="box special">
+									<span class="image featured"><img src="images/inauguration.png" alt="" /></span>
+									<h3>Frequentia 2023-24 Inauguration</h3>
+									<p>As the curtain rises on the impending inauguration of our Statistics Association, excitement fills the air. A platform for knowledge exchange and exploration, this event promises to ignite a passion for data-driven insights and collaboration. Join us in celebrating the start of this enriching journey.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button alt">Learn More</a></li>
+									</ul> -->
+								</section>
+	
+							</div>
+							<div class="col-6 col-12-narrower">
+	
+								<section class="box special">
+									<span class="image featured"><img src="images/adaptus-statistica.png" alt="" /></span>
+									<h3>Adaptus Statistica</h3>
+									<p>Frequentia's Adaptus Statistica buzzed with dynamic competitions, enlightening workshops, and valuable networking. A celebration of statistical excellence, it united data enthusiasts, emphasizing the field's importance across campuses and highlighting the Association's commitment to fostering knowledge and collaboration.</p>
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button alt">Learn More</a></li>
+									</ul> -->
+								</section>
+	
+							</div>
+						</div>
 					</section>
+					</section>
+					
+			</section>
+			
+
 					<!-- <section class="box special features">
 						<div class="features-row">
 							<section>
@@ -181,39 +758,9 @@
 					</section> -->
 					
 
-				</section>
-				<section id="events" class="box">
-					<h2>Events Conducted</h2>
-					<div style="text-align: right;margin-top: -90px;margin-bottom: 60px;">
-						<a href="events.html" class="button">View All</a>
-					</div>
-					<div class="row">
-						<div class="col-6 col-12-narrower">
+				
 
-							<section class="box special">
-								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-								<h3>Frequentia 2023-24 Inauguration</h3>
-								<p>As the curtain rises on the impending inauguration of our Statistics Association, excitement fills the air. A platform for knowledge exchange and exploration, this event promises to ignite a passion for data-driven insights and collaboration. Join us in celebrating the start of this enriching journey.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-
-						</div>
-						<div class="col-6 col-12-narrower">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>Adaptus Statistica</h3>
-								<p>Frequentia's Adaptus Statistica buzzed with dynamic competitions, enlightening workshops, and valuable networking. A celebration of statistical excellence, it united data enthusiasts, emphasizing the field's importance across campuses and highlighting the Association's commitment to fostering knowledge and collaboration.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-
-						</div>
-					</div>
-				</section>
+				
 
 			<!-- CTA -->
 				<!-- <section id="cta">
@@ -235,19 +782,94 @@
 				</section> -->
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Frequentia. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+			<footer id="contact" class="footer-section" style="background-color: #202020;">
+				<div class="container">
+					
+					<div class="footer-content pt-5 pb-5">
+						<div class="row">
+							<div class="col-xl-4 col-lg-4 mb-50">
+								<div class="footer-widget" style="-webkit-text-fill-color: white;">
+									<div class="footer-logo">
+										<a href="index.html"><h2><b>Frequentia</b></h2></a>
+									</div>
+									<div class="footer-text" style="margin-top: -30px;">
+										<p>In association with Statistics Department<br>St. Joseph's University</p>
+									</div>
+									<!-- <div class="footer-social-icon">
+										<span>Follow us</span>
+										<a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+										<a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+										<a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+									</div> -->
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+								<div class="footer-widget">
+									<div class="footer-widget-heading">
+										<h3>Useful Links</h3>
+									</div>
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Teacher Coordinators</a></li>
+										<li><a href="#">Committee Members</a></li>
+										<li><a href="#">Events</a></li>
+										<!-- <li><a href="#">About us</a></li>
+										<li><a href="#">Our Services</a></li>
+										<li><a href="#">Expert Team</a></li>
+										<li><a href="#">Contact us</a></li>
+										<li><a href="#">Latest News</a></li> -->
+									</ul>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+								<div class="footer-widget" style="text-align: left;">
+									<div class="footer-widget-heading">
+										<h3>Contact Us</h3>
+									</div>
+									<!-- <div class="footer-text mb-25">
+										<p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+									</div>
+									<div class="subscribe-form">
+										<form action="#">
+											<input type="text" placeholder="Email Address">
+											<button><i class="fab fa-telegram-plane"></i></button>
+										</form>
+									</div> -->
+									<ul>
+										<li>Email - Frequentia.sjc@gmail.com</li>
+										<li>Whatsapp - +911234567890</li>
+										<li style="padding-left: 5em;">+910987654321</li>
+										<li><a href="https://instagram.com/frequentia_sju?igshid=MzRIODBiNWFIZA==">Instagram - frequentia_sju</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+								<div class="copyright-text">
+									<p>Copyright &copy; 2023-24, All Right Reserved Frequentia</p>
+								</div>
+							</div>
+							<!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Terms</a></li>
+										<li><a href="#">Privacy</a></li>
+										<li><a href="#">Policy</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</footer>
 
 		</div>
 
